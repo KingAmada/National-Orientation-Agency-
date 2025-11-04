@@ -88,23 +88,29 @@
             <nav class="w-full md:w-1/4 mb-6 md:mb-0">
                 <!-- Horizontal scroll on mobile, vertical list on desktop -->
                 <div class="tab-nav-container flex flex-row md:flex-col overflow-x-auto md:overflow-x-visible pb-2 md:pb-0 bg-white md:bg-transparent rounded-lg shadow-sm md:shadow-none">
-                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200 active" data-target="welcome">
+                    <button classs="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200 active" data-target="welcome">
                         Welcome & Overview
                     </button>
                     <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="government">
-                        How Nigeria is Governed
+                        Government & Constitution
                     </button>
                     <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="rights">
                         Your Fundamental Rights
                     </button>
-                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="status">
-                        Visitor Status & Key Regulations
+                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="immigration">
+                        Immigration & Residence
+                    </button>
+                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="business">
+                        Doing Business & Investing
                     </button>
                     <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="legal">
-                        Nigeria's Legal Systems
+                        Legal System & Law Enforcement
                     </button>
-                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="duties">
-                        Responsibilities & Prohibitions
+                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="safety">
+                        Health, Safety & Culture
+                    </button>
+                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="prohibitions">
+                        Key Prohibitions (Warning)
                     </button>
                 </div>
             </nav>
@@ -126,236 +132,214 @@
                     </div>
                 </div>
 
-                <!-- How Nigeria is Governed Panel -->
+                <!-- Government & Constitution Panel -->
                 <div id="government" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
-                    <h2 class="text-2xl font-bold text-green-800 mb-6">A Federal Republic: Sharing Power</h2>
+                    <h2 class="text-2xl font-bold text-green-800 mb-6">Government & Constitution</h2>
                     <p class="text-gray-700 text-lg mb-6 leading-relaxed">
-                        Nigeria is a **federal republic**, which means power is shared between different levels of government. You are subject to the laws of both the national (Federal) government and the specific state you are in.
+                        Nigeria is a **Federal Republic** with three tiers of government (Federal, State, and Local) and a strict **separation of powers** at the Federal and State levels.
                     </D>
                     
-                    <!-- Image of National Assembly -->
-                    
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/National_Assembly_complex_in_Abuja%2C_Nigeria.jpg/1280px-National_Assembly_complex_in_Abuja%2C_Nigeria.jpg" 
-                         alt="Nigerian National Assembly complex" 
-                         class="rounded-lg shadow-md mb-6 w-full object-cover h-64"
-                         onerror="this.src='https://placehold.co/800x400/166534/FFFFFF?text=Nigerian+National+Assembly'; this.onerror=null;">
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <!-- Federal Card -->
-                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200 shadow-sm">
+                    <div class="space-y-6">
+                        <!-- Federal -->
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
                             <h3 class="text-xl font-semibold text-gray-900 mb-2">1. The Federal Government</h3>
-                            <p class="text-gray-600">Headed by the President, this level handles national issues like defense, currency, immigration, and foreign affairs. It is based in the capital city, Abuja.</p>
+                            <p class="text-gray-600 leading-relaxed">Based in Abuja, it handles national "Exclusive List" items: defense, currency, immigration, customs, and foreign affairs.</p>
+                            <ul class="list-disc list-outside pl-5 mt-3 space-y-2 text-gray-600">
+                                <li><strong>The Executive (The Presidency):</strong> Headed by the President, who is Head of State and Commander-in-Chief. The President implements laws and appoints ministers.</li>
+                                <li><strong>The Legislature (National Assembly):</strong> A bicameral body that makes laws.
+                                    <ul class="list-circle list-outside pl-6 mt-1">
+                                        <li><strong>The Senate:</strong> 109 members (3 from each state, 1 from FCT).</li>
+                                        <li><strong>The House of Representatives:</strong> 360 members based on population.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>The Judiciary (Federal Courts):</strong> Interprets laws. Includes the Supreme Court, Court of Appeal, and Federal High Court.</li>
+                            </ul>
                         </div>
-                        <!-- State Card -->
-                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200 shadow-sm">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2. State Governments (36)</h3>
-                            <p class="text-gray-600">Each of Nigeria's 36 states has its own Governor, State Assembly, and Judiciary. They manage regional matters like local transportation, schools, and health services.</p>
+                        
+                        <!-- State -->
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2. State Governments (36 States + FCT)</h3>
+                            <p class="text-gray-600 leading-relaxed">Each state, headed by a Governor, has its own executive, legislature (House of Assembly), and judiciary (State High Court, Magistrate Courts). They handle "Residual List" items like local transport, health, and primary education.</p>
                         </div>
-                        <!-- FCT Card -->
-                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200 shadow-sm">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">3. Federal Capital Territory (FCT)</h3>
-                            <p class="text-gray-600">The capital city of Abuja is not a state. It is special territory administered directly by the Federal Government through a Minister.</p>
+
+                        <!-- Local -->
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">3. Local Government Areas (774 LGAs)</h3>
+                            <p class="text-gray-600 leading-relaxed">Headed by a Chairman, these bodies manage local markets, sanitation, and community matters.</p>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Separation of Powers</h3>
-                    <p class="text-gray-700 text-lg mb-4 leading-relaxed">
-                        At the Federal and State levels, power is further divided into three branches to create a system of checks and balances:
-                    </p>
-                    <ul class="list-none space-y-3">
-                        <li class="flex items-start"><strong class="w-32 text-gray-800">The Executive:</strong> (The President / Governor) - Implements laws.</li>
-                        <li class="flex items-start"><strong class="w-32 text-gray-800">The Legislature:</strong> (National / State Assembly) - Makes laws.</li>
-                        <li class="flex items-start"><strong class="w-32 text-gray-800">The Judiciary:</strong> (The Courts) - Interprets laws.</li>
-                    </ul>
                 </div>
                 
                 <!-- Your Fundamental Rights Panel -->
                 <div id="rights" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
-                    <h2 class="text-2xl font-bold text-green-800 mb-6">Your Rights as a Person in Nigeria</h2>
+                    <h2 class="text-2xl font-bold text-green-800 mb-6">Your Fundamental Rights (Chapter IV)</h2>
                     <p class="text-gray-700 text-lg mb-6 leading-relaxed">
-                        Chapter IV of the Constitution grants these rights to **all persons**, regardless of nationality. While you are in Nigeria, you are protected.
+                        Chapter IV of the Constitution grants these rights to **all persons**, regardless of nationality.
                     </p>
-                    <div class="space-y-5">
-                        <!-- Key rights... -->
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><svg class="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-900">Right to Life</h3>
-                                <p class="text-gray-600">You cannot be intentionally deprived of your life, except by a court sentence for a criminal offense.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><svg class="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></div>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-900">Right to Dignity</h3>
-                                <p class="text-gray-600">You are protected from torture, slavery, forced labor, and any inhuman or degrading treatment.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><svg class="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></div>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-900">Right to Personal Liberty</h3>
-                                <p class="text-gray-600">You cannot be arrested or detained unlawfully. If you are, you have the right to be told the reason and to be brought before a court quickly.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><svg class="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16v2m-6-16v2m6 16v2"></path></svg></div>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-900">Right to a Fair Hearing</h3>
-                                <p class="text-gray-600">If you have a civil or criminal case, you are entitled to a fair and public trial by an impartial court. You are presumed innocent until proven guilty.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"><svg class="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-900">Freedom of Thought, Conscience & Religion</h3>
-                                <p class="text-gray-600">You are free to practice your religion (or no religion) and to hold your own beliefs without government interference.</p>
-                            </div>
-                        </div>
+                    <div class="space-y-4">
+                        <p><strong class="font-semibold text-gray-800">Right to Life:</strong> You cannot be intentionally deprived of your life, except by a court sentence.</p>
+                        <p><strong class="font-semibold text-gray-800">Right to Dignity:</strong> You are protected from torture, slavery, and inhuman or degrading treatment.</p>
+                        <p><strong class="font-semibold text-gray-800">Right to Personal Liberty:</strong> You cannot be arrested or detained unlawfully. If you are, you must be told the reason and brought before a court quickly.</p>
+                        <p><strong class="font-semibold text-gray-800">Right to a Fair Hearing:</strong> You are entitled to a fair, public trial by an impartial court and are presumed innocent until proven guilty.</p>
+                        <p><strong class="font-semibold text-gray-800">Right to Private & Family Life:</strong> Your privacy, home, and correspondence are protected from arbitrary interference.</p>
+                        <p><strong class="font-semibold text-gray-800">Freedom of Thought, Conscience & Religion:</strong> You are free to practice your religion (or no religion).</p>
+                        <p><strong class="font-semibold text-gray-800">Freedom of Expression:</strong> You have the right to hold and express opinions (this does not protect hate speech, defamation, or sedition).</p>
+                        <p><strong class="font-semibold text-gray-800">Freedom of Assembly:</strong> You can assemble freely and associate with others, but this right is subject to public order.</p>
+                        <p><strong class="font-semibold text-gray-800">Freedom of Movement:</strong> You have the right to move freely throughout Nigeria and reside in any part, *subject to your visa conditions*. This right does not override immigration law.</p>
                     </div>
-                    <!-- New Section: Limitations -->
+
+                    <!-- Enforcement -->
                     <div class="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-r-lg mt-8">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Important: Limitations on Your Rights</h3>
-                        <p class="text-gray-700 text-lg leading-relaxed">
-                            These fundamental rights are not absolute. The Constitution allows them to be limited by law for specific, valid reasons, such as:
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">How to Enforce Your Rights</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-3">
+                            If you believe your fundamental rights have been breached, you have the right to seek redress.
                         </p>
-                        <ul class="list-disc list-outside pl-5 mt-3 space-y-2 text-gray-700">
-                            <li>National Security</li>
-                            <li>Public Health (e.g., quarantine or mandatory vaccination)</li>
-                            <li>Public Order (e.g., curfews during unrest)</li>
-                            <li>Protecting the rights and freedoms of other people.</li>
+                        <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                            <li>You can apply to a <strong class="font-semibold">State High Court</strong> or <strong class="font-semibold">Federal High Court</strong> for enforcement.</li>
+                            <li>You are entitled to legal representation. If you cannot afford one, contact the Legal Aid Council of Nigeria or your embassy/consulate.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Visitor vs. Citizen Status Panel -->
-                <div id="status" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
-                    <h2 class="text-2xl font-bold text-green-800 mb-6">Visitor Status: Rights vs. Privileges</h2>
+                <!-- Immigration & Residence Panel -->
+                <div id="immigration" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-green-800 mb-6">Immigration & Residence</h2>
                     <p class="text-gray-700 text-lg mb-6 leading-relaxed">
-                        While you are protected by fundamental *human* rights, the Constitution reserves
-                        certain *political* and *economic* rights exclusively for Nigerian citizens. Your ability to be in the country is a *privilege* governed by specific laws.
-                    </D>
-                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg mb-8">
-                        <h3 class="text-xl font-semibold text-yellow-900 mb-3">As a non-citizen, you:</h3>
-                        <ul class="list-disc list-outside pl-5 space-y-3 text-yellow-800 text-lg">
-                            <li><strong class="font-semibold">Cannot vote</strong> in any Nigerian election.</li>
-                            <li><strong class="font-semibold">Cannot run for political office</strong> (e.g., President, Governor, Senator).</li>
-                            <li><strong class="font-semibold">Are not entitled</strong> to a Nigerian passport.</li>
-                            <li><strong class="font-semibold">Do not have</strong> an automatic right to live or work in Nigeria without authorization.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- New Detailed Laws Section -->
-                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Key Laws & Regulations for Visitors</h2>
+                        Your entry, stay, and work are governed by the <strong class="font-mono">Immigration Act, 2015</strong>, and managed by the <strong class="font-semibold">Nigeria Immigration Service (NIS)</strong>. Your visa is not a right; it is a privilege.
+                    </p>
                     <div class="space-y-6">
-                        <!-- Immigration Card -->
                         <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                            <h3 class="text-xl font-semibold text-blue-900 mb-2">1. Immigration & Residence</h3>
-                            <p class="text-blue-800 text-lg leading-relaxed mb-3">
-                                <strong class="font-semibold">Governing Law:</strong> <span class="font-mono">Immigration Act, 2015</span>
-                            </p>
+                            <h3 class="text-xl font-semibold text-blue-900 mb-2">1. Key Visa Types</h3>
                             <ul class="list-disc list-outside pl-5 space-y-2 text-blue-800">
-                                <li>Your entry and stay are dictated by your visa (Tourist, Business, Temporary Work Permit, etc.).</li>
-                                <li><strong class="font-semibold">You cannot work on a Tourist or Business visa.</strong> Employment requires a specific visa (Subject to Regularization or STR) and a work permit.</li>
-                                <li>For long-term residence (over 90 days), you must obtain a <strong class="font-semibold">CERPAC</strong> (Combined Expatriate Residence Permit and Aliens Card), which is your "Green Card."</li>
+                                <li><strong class="font-semibold">Visa on Arrival (VoA):</strong> Available to citizens of many countries (especially African Union members) and business visitors with pre-approval.</li>
+                                <li><strong class="font-semibold">Business Visa:</strong> For meetings, conferences, or trade missions. <strong class="text-red-700 font-bold">You cannot work on this visa.</strong></li>
+                                <li><strong class="font-semibold">Temporary Work Permit (TWP):</strong> For short-term, specialized jobs (e.g., machinery installation, training). Usually valid for 3 months.</li>
+                                <li><strong class="font-semibold">Subject to Regularization (STR) Visa:</strong> This is the long-term work visa. It's required for foreigners taking up full-time employment. This visa is the prerequisite for a CERPAC.</li>
                             </ul>
                         </div>
-                        <!-- Work & Business Card -->
+
                         <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                            <h3 class="text-xl font-semibold text-blue-900 mb-2">2. Work & Business</h3>
-                            <p class="text-blue-800 text-lg leading-relaxed mb-3">
-                                <strong class="font-semibold">Governing Laws:</strong> <span class="font-mono">NIPC Act</span> & <span class="font-mono">CAMA 2020</span>
+                            <h3 class="text-xl font-semibold text-blue-900 mb-2">2. Expatriate Quota</h3>
+                            <p class="text-blue-800 text-lg leading-relaxed">
+                                A Nigerian company cannot hire a foreigner unless it has an <strong class="font-semibold">"Expatriate Quota"</strong> approval from the Ministry of Interior. This is the company's responsibility, but the STR visa depends on it.
                             </p>
-                            <ul class="list-disc list-outside pl-5 space-y-2 text-blue-800">
-                                <li>To start a business, you must register your company with the <strong class="font-semibold">Corporate Affairs Commission (CAC)</strong>.</li>
-                                <li>Foreign-owned companies must register with the <strong class="font-semibold">Nigerian Investment Promotion Commission (NIPC)</strong>.</li>
-                                <li>To hire foreign employees (including yourself), the company must obtain an <strong class="font-semibold">Expatriate Quota</strong> from the Ministry of Interior.</li>
-                            </ul>
                         </div>
-                        <!-- Finance & Currency Card -->
+
                         <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                            <h3 class="text-xl font-semibold text-blue-900 mb-2">3. Finance & Currency</h3>
-                            <p class="text-blue-800 text-lg leading-relaxed mb-3">
-                                <strong class="font-semibold">Governing Body:</strong> <span class="font-mono">Central Bank of Nigeria (CBN)</span>
+                            <h3 class="text-xl font-semibold text-blue-900 mb-2">3. CERPAC (The "Green Card")</h3>
+                            <p class="text-blue-800 text-lg leading-relaxed">
+                                The <strong class="font-semibold">Combined Expatriate Residence Permit and Aliens Card (CERPAC)</strong> is your official residence permit.
                             </p>
-                            <ul class="list-disc list-outside pl-5 space-y-2 text-blue-800">
-                                <li>You must declare any foreign currency in cash or travelers' checks exceeding <strong class="font-semibold">USD $10,000</strong> (or its equivalent) upon entry or exit.</li>
-                                <li>All foreign currency exchanges must be done through <strong class="font-semibold">authorized dealers</strong> (i.e., banks). Using the "black market" for forex is illegal and risky.</li>
-                            </ul>
-                        </div>
-                        <!-- Property Card -->
-                        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                            <h3 class="text-xl font-semibold text-blue-900 mb-2">4. Property & Land</h3>
-                            <p class="text-blue-800 text-lg leading-relaxed mb-3">
-                                <strong class="font-semibold">Governing Law:</strong> <span class="font-mono">Land Use Act, 1978</span>
-                            </p>
-                            <ul class="list-disc list-outside pl-5 space-y-2 text-blue-800">
-                                <li>All land in Nigeria is technically owned by the State Governor on behalf of the people.</li>
-                                <li><strong class="font-semibold">Foreigners cannot own land outright.</strong></li>
-                                <li>You *can* acquire land through a long-term lease (e.g., 99 years), but this requires the official consent of the State Governor.</li>
+                            <ul class="list-disc list-outside pl-5 space-y-2 text-blue-800 mt-2">
+                                <li>It is mandatory for any foreigner staying in Nigeria for more than 90 days (except diplomats and some others).</li>
+                                <li>You must apply for it *after* arriving on an STR visa.</li>
+                                <li>It is typically valid for 1-2 years and is renewable.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Nigeria's Legal Systems Panel -->
+                <!-- Doing Business & Investing Panel -->
+                <div id="business" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-green-800 mb-6">Doing Business & Investing</h2>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        Nigeria actively encourages foreign investment, which is governed by several key laws.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">1. Company Registration (CAMA 2020)</h3>
+                            <p class="text-gray-600 leading-relaxed">To do business, you must register your company with the <strong class="font-semibold">Corporate Affairs Commission (CAC)</strong>. Under the Companies and Allied Matters Act (CAMA) 2020, foreigners can fully own a Nigerian company.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2. Investor Protections (NIPC Act)</h3>
+                            <p class="text-gray-600 leading-relaxed">The <strong class="font-semibold">Nigerian Investment Promotion Commission (NIPC) Act</strong> is your most important protection. It guarantees:</p>
+                            <ul class="list-disc list-outside pl-5 mt-2 space-y-2 text-gray-600">
+                                <li><strong class="font-semibold">Repatriation of Profits:</strong> You can freely transfer your profits, dividends, and (after-tax) proceeds from a sale out of Nigeria in foreign currency, via an authorized bank.</li>
+                                <li><strong class="font-semibold">Protection from Expropriation:</strong> The government cannot seize your business or property, except for national interest and with prompt, fair compensation.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">3. Taxation (PITA & CITA)</h3>
+                            <p class="text-gray-600 leading-relaxed"><strong class="font-semibold">Personal Income Tax Act (PITA):</strong> If you are resident in Nigeria for <strong class="font-semibold">183 days or more</strong> in any 12-month period, your worldwide income may be subject to Nigerian tax. <strong class="font-semibold">Companies Income Tax Act (CITA):</strong> Registered companies pay tax on their profits.</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">4. Land (Land Use Act, 1978)</h3>
+                            <p class="text-gray-600 leading-relaxed">This is critical: <strong class="font-semibold">Foreigners cannot own land outright in Nigeria.</strong> All land is vested in the State Governor. You can, however, acquire land via a long-term <strong class="font-semibold">lease (e.g., 99 years)</strong>, which requires the Governor's official consent.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">5. Local Content (NOGICD Act 2010)</h3>
+                            <p class="text-gray-600 leading-relaxed">If your business is in the <strong class="font-semibold">Oil & Gas sector</strong>, you MUST comply with the Nigerian Oil and Gas Industry Content Development (NOGICD) Act. This law mandates giving "first consideration" to Nigerian companies and labor for contracts and services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal System & Law Enforcement Panel -->
                 <div id="legal" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
-                    <h2 class="text-2xl font-bold text-green-800 mb-6">A Diverse Legal Landscape</h2>
+                    <h2 class="text-2xl font-bold text-green-800 mb-6">Legal System & Law Enforcement</h2>
                     <p class="text-gray-700 text-lg mb-6 leading-relaxed">
-                        Nigeria's history has created a unique and complex legal system. The type of law that applies can depend on the state you're in and the nature of the issue.
+                        Nigeria operates a complex, multi-layered legal system.
                     </p>
-                    <div class="space-y-6">
-                        <!-- Common Law -->
-                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">1. Common Law (The National Standard)</h3>
-                            <p class="text-gray-600 leading-relaxed">Inherited from the British, this is the foundation of Nigeria's legal system. It applies in all federal courts and is the primary system for criminal and civil matters in the Southern and Central states. It is codified as the <strong class="font-semibold">Criminal Code</strong> in the South.</p>
-                        </div>
-                        <!-- Sharia Law -->
-                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2. Sharia Law (Penal Code)</h3>
-                            <p class="text-gray-600 leading-relaxed">Several states in Northern Nigeria (currently 12) operate a Sharia legal system, which runs alongside Common Law. This is codified as the <strong class="font-semibold">Penal Code</strong>, which incorporates Sharia principles for criminal matters. While it primarily applies to Muslims, its presence heavily influences local laws and customs (e.g., regarding alcohol, dress codes) that apply to everyone in those states.</p>
-                        </div>
-                        <!-- Customary Law -->
-                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">3. Customary Law</h3>
-                            <p class="text-gray-600 leading-relaxed">This unwritten law is based on the age-old traditions and customs of Nigeria's 370+ ethnic groups. It is typically used in local communities to settle matters like land inheritance or family disputes, and it varies greatly from one community to another.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Your Key Responsibilities Panel -->
-                <div id="duties" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
-                    <h2 class="text-2xl font-bold text-green-800 mb-6">Responsibilities & Prohibitions</h2>
-                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
-                        The Constitution establishes Nigeria as a nation governed by the **rule of law**. This applies to everyone within its borders—citizens and visitors alike.
-                    </p>
-                    <div class="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-lg space-y-4 mb-8">
-                        <h3 class="text-xl font-semibold text-green-900">As a guest in Nigeria, you are expected to:</h3>
-                        <ul class="list-disc list-outside pl-5 space-y-2 text-green-800 text-lg">
-                            <li><strong class="font-semibold">Respect and obey all laws</strong>, whether they are federal, state, or local bylaws.</li>
-                            <li>Respect the national symbols, such as the flag and national anthem.</li>
-                            <li>Assist law enforcement agencies in their duties (e.D., providing information if you witness a crime).</li>
-                            <li>Declare your income honestly and pay any taxes you may be liable for if you are working in Nigeria.</li>
-                        </ul>
+                    <!-- Legal Systems -->
+                    <div class="space-y-4 mb-8">
+                        <p><strong class="font-semibold text-gray-800">1. Common Law:</strong> Inherited from Britain, this is the basis for most criminal and civil law, especially in Southern and Central states (the <strong class="font-mono">Criminal Code</strong>).</p>
+                        <p><strong class="font-semibold text-gray-800">2. Sharia Law:</strong> In 12 Northern states, the <strong class="font-mono">Penal Code</strong> incorporates Sharia law for criminal matters. While it primarily applies to Muslims, it influences local customs (e.g., on alcohol) that affect everyone.</p>
+                        <p><strong class="font-semibold text-gray-800">3. Customary Law:</strong> Unwritten, ethnic-based traditions used to settle local disputes (e.g., inheritance, family matters).</p>
                     </div>
 
-                    <!-- New Prohibitions Section -->
-                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Specific Prohibitions & Conduct</h2>
-                     <div class="bg-red-50 border-l-4 border-red-600 p-6 rounded-r-lg">
-                        <h3 class="text-xl font-semibold text-red-900 mb-4">Warning: Areas of Zero Tolerance</h3>
-                        <p class="text-red-800 text-lg leading-relaxed mb-4">
-                            Violating the following laws can lead to severe penalties, including imprisonment and deportation.
-                        </Get>
-                        <ul class="list-disc list-outside pl-5 space-y-3 text-red-800 text-lg">
-                            <li><strong class="font-semibold">Illegal Drugs:</strong> Nigeria has <strong class="font-semibold">zero tolerance</strong> for drug trafficking, possession, or use. The <span class="font-mono">NDLEA (National Drug Law Enforcement Agency)</span> enforces this strictly.</li>
-                            <li><strong class="font-semibold">Currency Black Market:</strong> Exchanging currency on the street is illegal. Use only banks or licensed "Bureau de Change" (BDC) operators.</li>
-                            <li><strong class="font-semibold">Photography of Secure Sites:</strong> Do NOT photograph military installations, government buildings, police stations, airports, or armed personnel. This can lead to arrest.</li>
-                            <li><strong class="font-semibold">Disrespect to Authority:</strong> Always be polite to police, immigration, military, and other officials. Publicly arguing with or insulting an officer can be considered a criminal offense.</li>
-                            <li><strong class="font-semibold">Cultural & Religious Insensitivity:</strong> Be aware of local customs. In many areas (especially the North), modest dress is required. Public displays of affection may be frowned upon.</li>
-                            <li><strong class="font-semibold">Illegal Exports:</strong> You cannot export Nigerian antiquities or artifacts without a permit from the National Commission for Museums and Monuments.</li>
-                        </ul>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Law Enforcement Agencies to Know</h3>
+                    <div class="space-y-4">
+                        <p><strong class="font-semibold text-gray-800">Nigeria Police Force (NPF):</strong> Responsible for general law and order, crime prevention, and traffic control. They are your first point of contact.</p>
+                        <p><strong class="font-semibold text-gray-800">Economic and Financial Crimes Commission (EFCC):</strong> A powerful agency targeting financial fraud ("419"), money laundering, and cybercrime.</p>
+                        <p><strong class="font-semibold text-gray-800">Independent Corrupt Practices Commission (ICPC):</strong> Focuses on bribery and corruption involving public officials.</p>
+                        <p><strong class="font-semibold text-gray-800">National Drug Law Enforcement Agency (NDLEA):</strong> Manages all drug-related offenses. Penalties are severe.</p>
+                        <p><strong class="font-semibold text-gray-800">Nigeria Data Protection Act (NDPA) 2023:</strong> If your business handles Nigerian citizens' data, you must comply with this modern privacy law, which is similar to GDPR.</p>
                     </div>
                 </div>
 
+                <!-- Health, Safety & Culture Panel -->
+                <div id="safety" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-green-800 mb-6">Health, Safety & Culture</h2>
+                    
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">1. Emergency & Health</h3>
+                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200 mb-6 space-y-3">
+                        <p><strong class="font-semibold text-gray-800">Emergency Numbers:</strong> The national emergency numbers are <strong class="font-semibold text-red-600 text-lg">112</strong> and <strong class="font-semibold text-red-600 text-lg">767</strong>. Save them.</p>
+                        <p><strong class="font-semibold text-gray-800">Embassy/Consulate:</strong> Always have the 24/7 emergency contact number for your country's embassy or consulate. They are your primary support in a serious crisis.</p>
+                        <p><strong class="font-semibold text-gray-800">Health Risks:</strong> <strong class="font-semibold">Malaria</strong> is endemic. You must take prophylaxis and use mosquito nets/repellent. Drink only bottled or boiled water. Be cautious with street food.</p>
+                        <p><strong class="font-semibold text-gray-800">Hospitals:</strong> Public hospitals are often under-resourced. For serious matters, it is highly recommended to use private clinics, which are common in major cities like Lagos and Abuja. Ensure you have comprehensive travel health insurance.</p>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">2. Cultural Etiquette</h3>
+                    <div class="bg-gray-50 rounded-lg p-5 border border-gray-200 space-y-3">
+                        <p><strong class="font-semibold text-gray-800">Greetings:</strong> Greetings are essential. Always ask "How are you?" or "Good morning/afternoon" before starting a conversation. Rushing is seen as rude.</p>
+                        <p><strong class="font-semibold text-gray-800">Respect for Elders:</strong> Hierarchy is important. Greet elders first. In Yorubaland, a slight bow (for men) or curtsy (for women) is a sign of respect.</p>
+                        <p><strong class="font-semibold text-gray-800">Right Hand:</strong> Always use your right hand to give or receive items, especially money or food. The left hand is considered unclean.</p>
+                        <p><strong class="font-semibold text-gray-800">"Nigerian Time":</strong> Punctuality is important for formal business meetings, but social events or general appointments may run on "Nigerian time," which is more relaxed.</p>
+                    </div>
+                </div>
+
+                <!-- Key Prohibitions Panel -->
+                <div id="prohibitions" class="tab-content bg-white shadow-xl rounded-xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-red-700 mb-6">Key Prohibitions (Warning)</h2>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        Violating the following laws can lead to severe penalties, including imprisonment and deportation. Ignorance of the law is not an excuse.
+                    </p>
+                    <div class="bg-red-50 border-l-4 border-red-600 p-6 rounded-r-lg">
+                        <h3 class="text-xl font-semibold text-red-900 mb-4">Areas of Zero Tolerance</h3>
+                        <ul class="list-disc list-outside pl-5 space-y-4 text-red-800 text-lg">
+                            <li><strong class="font-semibold">Illegal Drugs:</strong> Nigeria has <strong class="font-semibold">zero tolerance</strong> for drug trafficking, possession, or use, enforced by the NDLEA. Penalties include life imprisonment.</li>
+                            <li><strong class="font-semibold">Currency Black Market:</strong> Exchanging currency on the street ("black market") is illegal. Use only banks or licensed "Bureau de Change" (BDC) operators.</li>
+                            <li><strong class="font-semibold">Photography of Secure Sites:</strong> Do NOT photograph military installations, government buildings, police stations, airports, bridges, or armed personnel. This can lead to arrest and confiscation of your equipment.</li>
+                            <li><strong class="font-semibold">Disrespect to Authority:</strong> Always be polite to police, immigration, military, and other officials. Publicly arguing with, insulting, or *especially* assaulting an officer is a serious criminal offense.</li>
+                            <li><strong class="font-semibold">Cybercrimes (Cybercrimes Act 2015):</strong> Nigeria has strict laws against online fraud ("Yahoo Yahoo"), phishing, and identity theft. Do not engage in any activity that could be perceived as such.</li>
+                            <li><strong class="font-semibold">Illegal Exports:</strong> You cannot export Nigerian antiquities, artifacts, or certain animal products without a permit from the National Commission for Museums and Monuments.</li>
+                            <li><strong class="font-semibold">Cultural & Religious Insensitivity:</strong> Be aware of local customs. In many areas (especially the North), modest dress is required. Public displays of affection are often frowned upon. Blasphemy is a serious offense.</li>
+                        </ul>
+                    </div>
+                </div>
             </main>
         </div>
         
