@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Visitor's Guide to the Nigerian Constitution</title>
+    
+    <!-- Meta Tags Added -->
+    <title>NOA Visitor's Guide to Nigerian Law</title>
+    <meta name="description" content="An official guide from Nigeria's National Orientation Agency (NOA) for foreigners, detailing the Constitution, key laws, rights, and responsibilities.">
+    <meta name="keywords" content="Nigeria Constitution, Nigerian Law, Guide for Foreigners Nigeria, NOA, National Orientation Agency, Nigeria Immigration Act, Nigeria Business Law, CERPAC, NIPC">
+    <meta name="author" content="National Orientation Agency (NOA)">
+
+    <!-- Favicon Added -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBIk43505I1vIFlqeMoM-OjGqmTdgLy9HQs5CUCpYfOA" type="image/png" sizes="any">
+    
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Load Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,14 +69,15 @@
         
         <!-- Header Section -->
         <header class="bg-white shadow-md rounded-xl p-6 mb-6">
-            <div class="flex flex-col md:flex-row justify-between items-center md:space-x-4">
+            <!-- Use flex-col and items-center for mobile, then md:flex-row for desktop -->
+            <div class="flex flex-col items-center md:flex-row md:justify-between md:space-x-4">
                 <!-- NOA Logo -->
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBIk43505I1vIFlqeMoM-OjGqmTdgLy9HQs5CUCpYfOA" 
                      alt="National Orientation Agency Logo" 
                      class="h-24 w-auto mb-4 md:mb-0"
                      onerror="this.src='https://placehold.co/150x150/EEEEEE/222222?text=NOA+Logo'; this.onerror=null;">
                 
-                <!-- Titles -->
+                <!-- Titles - Added text-center -->
                 <div class="text-center">
                     <p class="text-sm font-semibold text-green-700">A Publication of the</p>
                     <h1 class="text-2xl md:text-3xl font-bold text-gray-900">National Orientation Agency (NOA)</h1>
@@ -88,8 +99,9 @@
             <nav class="w-full md:w-1/4 mb-6 md:mb-0">
                 <!-- Horizontal scroll on mobile, vertical list on desktop -->
                 <div class="tab-nav-container flex flex-row md:flex-col overflow-x-auto md:overflow-x-visible pb-2 md:pb-0 bg-white md:bg-transparent rounded-lg shadow-sm md:shadow-none">
-                    <button classs="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200 active" data-target="welcome">
-                        Welcome & Overview
+                    
+                    <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200 active" data-target="welcome">
+                        Welcome
                     </button>
                     <button class="tab-button flex-shrink-0 md:flex-shrink-1 md:w-full text-left p-4 font-semibold text-gray-700 hover:bg-green-100 rounded-lg md:rounded-r-none transition-all duration-200" data-target="government">
                         Government & Constitution
@@ -318,6 +330,7 @@
                         <p><strong class="font-semibold text-gray-800">Respect for Elders:</strong> Hierarchy is important. Greet elders first. In Yorubaland, a slight bow (for men) or curtsy (for women) is a sign of respect.</p>
                         <p><strong class="font-semibold text-gray-800">Right Hand:</strong> Always use your right hand to give or receive items, especially money or food. The left hand is considered unclean.</p>
                         <p><strong class="font-semibold text-gray-800">"Nigerian Time":</strong> Punctuality is important for formal business meetings, but social events or general appointments may run on "Nigerian time," which is more relaxed.</p>
+Verify or research the national emergency numbers (112 and 767) for accuracy. Double-check health recommendations (malaria, water). Ensure cultural etiquette points are accurate and respectfully phrased.
                     </div>
                 </div>
 
@@ -349,7 +362,7 @@
             <p class="text-gray-600 text-sm mt-2">Federal Capital Territory, Abuja, Nigeria</p>
             <p class="text-gray-500 text-xs mt-4">
                 This guide is for informational purposes only and does not constitute legal advice. Always consult a qualified legal professional in Nigeria for specific advice.
-            </p>
+            </P>
         </footer>
 
     </div>
@@ -383,4 +396,5 @@
 </body>
 
 </html>
+
 
